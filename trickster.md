@@ -1,49 +1,57 @@
-title: Trickster Shortcuts
-name: Trickster
-keyword: trickster
+{
+    "id": "auto",
+    "style": "css/h4dark.css",
+    "layout": "default"
+}
+%%%END
+### Trickster Keyboard Shortcuts
 
-**Global Hotkey**: ⌃Z
+**Global Hotkey**: xCTRLZ
 
-| Name                               | Command | Note |
-| ------                             | -----   |      |
-| Filters                            | CMD-1   |      |
-| Items                              | CMD-2   |      |
-| Favorites                          | CMD-3   |      |
-| Move between sections              | →, ←    |      |
-| Preferences                        | CMD-,   |      |
-| Global File Tracking Settings      | CMD-T   |      |
-| Basic File View: filename & icon   | CMD--   |      |
-| Extended File View: folder+preview | CMD-=   |      |
-| Sort by name                       | CMD-N   |      |
-| Sort by date (recent on top)       | CMD-R   |      |
-| Previous item (same as↑ )          | CTRL-P  |      |
-| Next item (same as↓ )              | CTRL-N  |      |
-[Global]
+#### Global
 
-|              Name              |   Command   | Note |
-|--------------------------------|-------------|------|
-| Show Context Menu for selected | CMD-M       |      |
-| Copy to clipboard              | CMD-C       |      |
-| Flag selected                  | CMD-F       |      |
-| Unflag selected                | CMD-OPT-F   |      |
-| Add to favorites               | CMD-S       |      |
-| Remove from favorites          | CMD-OPT-S   |      |
-| Remove selected from list      | ⌦,⌫         |      |
-| Move selected to trash         | CMD-⌦,⌫     |      |
-| Remove all files in folder     | OPT-⌦,OPT-⌫ |      |
-[Recent File List]
+| Shortcut	| Action	|  
+|  -----:	| :------	|  
+| xCMD1	| Filters	|  
+| xCMD2	| Items	|  
+| xCMD3	| Favorites	|  
+| →, ←	| Move between sections	|  
+| xCMD,	| Preferences	|  
+| xCMDT	| Global File Tracking Settings	|  
+| xCMD-	| Basic File View: only filename & icon	|  
+| xCMD=	| Extended File View: folder+preview	|  
+| xCMDN	| Sort by name	|  
+| xCMDR	| Sort by date (recent on top)	|  
+|  xCTRLP	| Previous item (same as↑ )	|  
+| xCTRLN	| Next item (same as↓ )	|  
 
 
-|             Name            | Command | Note |
-|-----------------------------|---------|------|
-| Select the relevant section | 1-5     |      |
-| Add new item                | CMD-=   |      |
-| Remove selected items       | CMD--   |      |
-[File Tracker/Filter Editors]
+#### In Recent File List
 
+| Shortcut	| Action	|  
+|  ------:	| ------	|  
+| xCMDM	| Show Context Menu for selected	|  
+| xCMDC	| Copy to clipboard	|  
+| xCMDF	| Flag selected	|  
+| xCMDxOPTF	| Unflag selected	|  
+| xCMDS	| Add to favorites	|  
+| xCMDxOPTS	| Remove from favorites	|  
+| ⌦ or ⌫	| Remove selected from list	|  
+| xCMD⌦ or ⌫	| Move selected to trash	|  
+| xOPT⌦ or xOPT⌫	| Remove all files that are in the folder as the selected. They'll show up again.	| 
 
-| Name                        | Command      | Note |
-| ------                      | :------:     |      |
-| Clear Search                | ⎋            |      |
-| Switch to recent items list | ↑ ↓ or CMD-2 |      |
-[Search]
+#### In File Tracker and Filter Editors
+
+| Shortcut	| Action	|  
+|  ------:	| ------	|  
+| 1-5	| Select the relevant section	|  
+| xCMD=	| Add new item	|  
+| xCMD-	| Remove selected items	|  
+
+#### In Search
+
+| Shortcut	| Action	|  
+|  ------:	| ------	|  
+| ⎋	| Clear Search	|  
+| ↑ ↓ or xCMD2	| Switch to recent items list	|  
+

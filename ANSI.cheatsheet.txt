@@ -1,0 +1,408 @@
+cheatsheet do
+	title 'ANSI'
+	docset_file_name 'ANSI Escape Codes'
+	keyword 'ansi'
+	introduction <<-'END'
+&gt; `"\033[31;1;4mHello\033[0m"`
+
+#### Colors
+END
+	category do
+		id 'Standard Colors'
+		entry do
+			name ''
+			command 'Foreground colors'
+
+		end
+		entry do
+			name 'Black'
+			command '30'
+
+			notes %(`\033[30;0m`)
+		end
+		entry do
+			name 'Red'
+			command '31'
+
+			notes %(`\033[31;0m`)
+		end
+		entry do
+			name 'Green'
+			command '32'
+
+			notes %(`\033[32;0m`)
+		end
+		entry do
+			name 'Yellow'
+			command '33'
+
+			notes %(`\033[33;0m`)
+		end
+		entry do
+			name 'Blue'
+			command '34'
+
+			notes %(`\033[34;0m`)
+		end
+		entry do
+			name 'Magenta'
+			command '35'
+
+			notes %(`\033[35;0m`)
+		end
+		entry do
+			name 'Cyan'
+			command '36'
+
+			notes %(`\033[36;0m`)
+		end
+		entry do
+			name 'White'
+			command '37'
+
+			notes %(`\033[37;0m`)
+		end
+		entry do
+			name ''
+			command 'Background colors'
+
+		end
+		entry do
+			name 'Black'
+			command '40'
+
+			notes %(`\033[40;0m`)
+		end
+		entry do
+			name 'Red'
+			command '41'
+
+			notes %(`\033[41;0m`)
+		end
+		entry do
+			name 'Green'
+			command '42'
+
+			notes %(`\033[42;0m`)
+		end
+		entry do
+			name 'Yellow'
+			command '43'
+
+			notes %(`\033[43;0m`)
+		end
+		entry do
+			name 'Blue'
+			command '44'
+
+			notes %(`\033[44;0m`)
+		end
+		entry do
+			name 'Magenta'
+			command '45'
+
+			notes %(`\033[45;0m`)
+		end
+		entry do
+			name 'Cyan'
+			command '46'
+
+			notes %(`\033[46;0m`)
+		end
+		entry do
+			name 'White'
+			command '47'
+
+			notes %(`\033[47;0m`)
+		end
+	end
+	category do
+		id 'Font Effects'
+		entry do
+			name 'Reset / Normal'
+			command '0'
+
+			notes %(all attributes off)
+		end
+		entry do
+			name 'Bold or increased intensity'
+			command '1'
+
+		end
+		entry do
+			name 'Faint (decreased intensity)'
+			command '2'
+
+			notes %(Not widely supported.)
+		end
+		entry do
+			name 'Italic'
+			command '3'
+
+			notes %(Not widely supported. Sometimes treated as inverse.)
+		end
+		entry do
+			name 'Underline'
+			command '4'
+
+		end
+		entry do
+			name 'Slow Blink'
+			command '5'
+
+			notes %(less than 150 per minute)
+		end
+		entry do
+			name 'Rapid Blink'
+			command '6'
+
+			notes %(MS-DOS ANSI.SYS; 150+ per minute; not widely supported)
+		end
+		entry do
+			name '[[reverse video]]'
+			command '7'
+
+			notes %(swap foreground and background colors)
+		end
+		entry do
+			name 'Conceal'
+			command '8'
+
+			notes %(Not widely supported.)
+		end
+		entry do
+			name 'Crossed-out'
+			command '9'
+
+			notes %(Characters legible, but marked for deletion.  Not widely supported.)
+		end
+		entry do
+			name 'Primary(default) font'
+			command '10'
+
+		end
+		entry do
+			name 'Alternate font'
+			command '11-19'
+
+			notes %(Select alternate font `n-10`)
+		end
+		entry do
+			name 'Fraktur'
+			command '20'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'Bold off or Double Underline'
+			command '21'
+
+			notes %(Bold off not widely supported; double underline hardly ever supported.)
+		end
+		entry do
+			name 'Normal color or intensity'
+			command '22'
+
+			notes %(Neither bold nor faint)
+		end
+		entry do
+			name 'Not italic, not Fraktur'
+			command '23'
+
+		end
+		entry do
+			name 'Underline off'
+			command '24'
+
+			notes %(Not singly or doubly underlined)
+		end
+		entry do
+			name 'Blink off'
+			command '25'
+
+		end
+		entry do
+			name 'Inverse off'
+			command '27'
+
+		end
+		entry do
+			name 'Reveal'
+			command '28'
+
+			notes %(conceal off)
+		end
+		entry do
+			name 'Not crossed out'
+			command '29'
+
+		end
+		entry do
+			name 'Set foreground color'
+			command '30-37'
+
+			notes %(See color table below)
+		end
+		entry do
+			name 'Set foreground color'
+			command '38'
+
+			notes %(Next arguments are `5;n` or `2;r;g;b`, see below)
+		end
+		entry do
+			name 'Default foreground color'
+			command '39'
+
+			notes %(implementation defined (according to standard))
+		end
+		entry do
+			name 'Set background color'
+			command '40-47'
+
+			notes %(See color table below)
+		end
+		entry do
+			name 'Set background color'
+			command '48'
+
+			notes %(Next arguments are `5;n` or `2;r;g;b`, see below)
+		end
+		entry do
+			name 'Default background color'
+			command '49'
+
+			notes %(implementation defined (according to standard))
+		end
+		entry do
+			name 'Framed'
+			command '51'
+
+		end
+		entry do
+			name 'Encircled'
+			command '52'
+
+		end
+		entry do
+			name 'Overlined'
+			command '53'
+
+		end
+		entry do
+			name 'Not framed or encircled'
+			command '54'
+
+		end
+		entry do
+			name 'Not overlined'
+			command '55'
+
+		end
+		entry do
+			name 'ideogram underline'
+			command '60'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'ideogram double underline'
+			command '61'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'ideogram overline'
+			command '62'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'ideogram double overline'
+			command '63'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'ideogram stress marking'
+			command '64'
+
+			notes %(hardly ever supported)
+		end
+		entry do
+			name 'ideogram attributes off'
+			command '65'
+
+			notes %(reset the effects of all of 60-64)
+		end
+		entry do
+			name 'Set bright foreground color'
+			command '90-97'
+
+			notes %(aixterm (not in standard))
+		end
+		entry do
+			name 'Set bright background color'
+			command '100-107'
+
+			notes %(aixterm (not in standard))
+		end
+	end
+	category do
+		id 'Cursor Movement'
+		entry do
+			name '**Cursor Position**'
+			command '`Esc[&lt;Line&gt;;&lt;Column&gt;HEsc[&lt;Line&gt;;&lt;Column&gt;f`'
+
+			notes %(Moves the cursor to the specified position (coordinates). If you do not specify a position, the cursor moves to the home position at the upper-left corner of the screen (line 0, column 0). This escape sequence works the same way as the following Cursor Position escape sequence.)
+		end
+		entry do
+			name '**Cursor Up**'
+			command '`Esc[&lt;Value&gt;A`'
+
+			notes %(Moves the cursor up by the specified number of lines without changing columns. If the cursor is already on the top line, ANSI.SYS ignores this sequence.)
+		end
+		entry do
+			name '**Cursor Down**'
+			command '`Esc[&lt;Value&gt;B`'
+
+			notes %(Moves the cursor down by the specified number of lines without changing columns. If the cursor is already on the bottom line, ANSI.SYS ignores this sequence.)
+		end
+		entry do
+			name '**Cursor Forward**'
+			command '`Esc[&lt;Value&gt;C`'
+
+			notes %(Moves the cursor forward by the specified number of columns without changing lines. If the cursor is already in the rightmost column, ANSI.SYS ignores this sequence.)
+		end
+		entry do
+			name '**Cursor Backward**'
+			command '`Esc[&lt;Value&gt;D`'
+
+			notes %(Moves the cursor back by the specified number of columns without changing lines. If the cursor is already in the leftmost column, ANSI.SYS ignores this sequence.)
+		end
+		entry do
+			name '**Save Cursor Position**'
+			command '`Esc[s`'
+
+			notes %(Saves the current cursor position. You can move the cursor to the saved cursor position by using the Restore Cursor Position sequence.)
+		end
+		entry do
+			name '**Restore Cursor Position**'
+			command '`Esc[u`'
+
+			notes %(Returns the cursor to the position stored by the Save Cursor Position sequence.)
+		end
+		entry do
+			name '**Erase Display**'
+			command '`Esc[2J`'
+
+			notes %(Clears the screen and moves the cursor to the home position (line 0, column 0).)
+		end
+		entry do
+			name '**Erase &lt;Line&gt;**'
+			command '`Esc[K`'
+
+			notes %(Clears all characters from the cursor position to the end of the line (including the character at the cursor position).)
+		end
+	end
+
+end

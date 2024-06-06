@@ -1,0 +1,389 @@
+cheatsheet do
+	title 'Marked 2'
+	docset_file_name 'Marked2'
+	keyword 'marked'
+	introduction <<-'END'
+Keyboard shortcuts for Marked 2
+END
+	category do
+		id 'Application Shortcuts'
+		entry do
+			name 'Preferences'
+			command '⌘-Comma'
+
+		end
+		entry do
+			name 'New File'
+			command '⌘-N'
+
+		end
+		entry do
+			name 'Open'
+			command '⌘-O'
+
+		end
+		entry do
+			name 'Re-open Last'
+			command '⇧⌘-R'
+
+		end
+		entry do
+			name 'Close'
+			command '⌘-W'
+
+		end
+		entry do
+			name 'Print Preview Window'
+			command '⌘-P'
+
+		end
+		entry do
+			name 'Save HTML'
+			command '⌘-S'
+
+		end
+		entry do
+			name 'Save PDF'
+			command '⇧⌘-P'
+
+		end
+		entry do
+			name 'Save RTF'
+			command '⇧⌘-S'
+
+		end
+		entry do
+			name 'Copy'
+			command '⌘-C'
+
+		end
+		entry do
+			name 'Copy HTML Source to clipboard'
+			command '⇧⌘-C'
+
+		end
+		entry do
+			name 'Toggle Source View'
+			command '⌘-U'
+
+		end
+		entry do
+			name 'Toggle Table of Contents'
+			command '⌘-T'
+
+		end
+		entry do
+			name 'Reload Preview'
+			command '⌘-R'
+
+		end
+		entry do
+			name 'Select Built-in Style'
+			command '⌘-1-9'
+
+		end
+		entry do
+			name 'Select Custom Style'
+			command '⌥⌘-1-9'
+
+		end
+		entry do
+			name 'Gear Menu'
+			command '⌘-/'
+
+		end
+		entry do
+			name 'Zoom In'
+			command '⇧⌘-='
+
+		end
+		entry do
+			name 'Zoom Out'
+			command '⇧⌘--'
+
+		end
+		entry do
+			name 'Reset Zoom'
+			command '⇧⌘-0'
+
+		end
+		entry do
+			name 'Minimize'
+			command '⌘-M'
+
+		end
+		entry do
+			name 'Keep on Top'
+			command '⇧⌘-F'
+
+		end
+		entry do
+			name 'Visualize Word Repetition'
+			command '⌃⌘-W'
+
+		end
+		entry do
+			name 'Show Boundaries of Included Files'
+			command '⌃⌘-B'
+
+		end
+		entry do
+			name 'Document Statistics'
+			command '⌥⌘-S'
+
+		end
+		entry do
+			name 'Readability Statistics'
+			command '⌥⌘-S'
+
+		end
+		entry do
+			name 'Detailed Statistics'
+			command '⌘-I'
+
+		end
+		entry do
+			name 'Toggle Custom Processor'
+			command '⌥⌘-C'
+
+		end
+		entry do
+			name 'Search'
+			command '⌘-F'
+
+		end
+		entry do
+			name 'Highlight next match'
+			command '⌘-G'
+
+		end
+		entry do
+			name 'Highlight previous match'
+			command '⇧⌘-G'
+
+		end
+		entry do
+			name 'Collapse all sections'
+			command '⌥⌘-←'
+
+		end
+		entry do
+			name 'Expand all sections'
+			command '⌥⌘-→'
+
+		end
+		entry do
+			name 'Preview Clipbaord'
+			command '⇧⌘-V'
+
+		end
+		entry do
+			name 'Save Clipboard Preview'
+			command '^⌘-S'
+
+		end
+	end
+	category do
+		id 'Quick Toggles'
+		entry do
+			name 'Retain Line Breaks'
+			command '⌃⇧⌥-L'
+
+		end
+		entry do
+			name 'IDs on Headlines'
+			command '⌃⇧⌥-I'
+
+		end
+		entry do
+			name 'Strip YAML'
+			command '⌃⇧⌥-Y'
+
+		end
+		entry do
+			name 'Strip MMD Metadata'
+			command '⌃⇧⌥-M'
+
+		end
+		entry do
+			name 'Scroll to First Edit'
+			command '⌃⇧⌥-S'
+
+		end
+		entry do
+			name 'CriticMarkup Always'
+			command '⌃⇧⌥-C'
+
+		end
+		entry do
+			name 'Smart Typography'
+			command '⌃⇧⌥-T'
+
+		end
+		entry do
+			name 'Process Inside HTML'
+			command '⌃⇧⌥-H'
+
+		end
+	end
+	category do
+		id 'Preview Shortcuts'
+		entry do
+			name 'Jump to Top'
+			command 't'
+			command 'gg'
+
+		end
+		entry do
+			name 'Jump to Bottom'
+			command 'b'
+			command 'G'
+
+		end
+		entry do
+			name 'Bookmark Scroll position'
+			command '⇧-[1-9]'
+
+		end
+		entry do
+			name 'Bookmark Nearest Headline'
+			command '⌥-[1-9]'
+
+		end
+		entry do
+			name 'Scroll to Bookmark'
+			command '[1-9]'
+
+		end
+		entry do
+			name 'Display Mini Map'
+			command '0'
+
+		end
+		entry do
+			name 'Next/Prev Bookmark Numerically'
+			command 'N'
+			command 'P'
+
+		end
+		entry do
+			name 'Next/Prev Bookmark in Page Order'
+			command 'n'
+			command 'p'
+
+		end
+		entry do
+			name 'Scroll Down/Up'
+			command 'j / k'
+
+		end
+		entry do
+			name 'Scroll Up/Down Faster'
+			command 'J / K'
+
+		end
+		entry do
+			name 'Navigate All Headers'
+			command '/ .'
+
+		end
+		entry do
+			name 'Navigate H1/H2 Headers'
+			command '< / >'
+
+		end
+		entry do
+			name 'Jump to Most Recent Edit Point'
+			command 'e'
+
+		end
+		entry do
+			name 'Auto-scroll'
+			command 's'
+
+		end
+		entry do
+			name 'Speed up/Slow down auto-scroll'
+			command '⇧-← / →'
+
+		end
+		entry do
+			name 'Open "fast switcher"'
+			command 'f'
+
+		end
+		entry do
+			name 'Display current included filename'
+			command 'I'
+
+		end
+		entry do
+			name 'Zoom Overview toggle'
+			command 'z'
+
+		end
+		entry do
+			name 'Navigate target highlights'
+			command '[ / ]'
+
+		end
+		entry do
+			name 'Navigate all highlights'
+			command '{ / }'
+
+		end
+		entry do
+			name 'Close Overlay/Deselect Text'
+			command 'Escape'
+
+		end
+		entry do
+			name 'Show/Hide Help HUD'
+			command 'h'
+			command '?'
+
+		end
+	end
+	category do
+		id 'Table of Contents navigation'
+		entry do
+			name 'Open TOC'
+			command '⌘-T'
+
+		end
+		entry do
+			name 'Select first/next item'
+			command 'j'
+			command '↑'
+
+		end
+		entry do
+			name 'Select previous item'
+			command 'k'
+			command '↓'
+
+		end
+		entry do
+			name 'Scroll to selection'
+			command 'o'
+
+		end
+		entry do
+			name 'Open TOC quick-search'
+			command 'Space'
+
+		end
+		entry do
+			name 'Select first search result'
+			command '↓'
+			command '⇥'
+
+		end
+		entry do
+			name 'Clear search/Dismiss TOC'
+			command 'Esc'
+
+		end
+	end
+
+end
